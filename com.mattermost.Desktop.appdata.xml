@@ -28,6 +28,10 @@
       <image type="source">https://ga0.imgix.net/screenshot/o/111417-mattermost-1513705838-1315444</image>
     </screenshot>
   </screenshots>
+  <categories>
+    <category>InstantMessaging</category>
+    <category>Network</category>
+  </categories>
   <releases>
     <release version="4.1.2" date="2018-05-25"/>
   </releases>

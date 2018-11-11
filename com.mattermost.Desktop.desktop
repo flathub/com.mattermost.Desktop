@@ -5,4 +5,5 @@ Exec=mattermost-flatpak
 Terminal=false
 Type=Application
 Icon=com.mattermost.Desktop
+Categories=Network;InstantMessaging;
 
