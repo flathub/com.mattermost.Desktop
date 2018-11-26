@@ -26,7 +26,7 @@
                 "install mattermost.sh /app/bin/mattermost-flatpak",
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
-                "install -Dm644 /app/main/icon.png /app/share/icons/hicolor/512x512/apps/com.mattermost.Desktop.png"
+                "install -Dm644 /app/main/icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg"
             ],
             "sources" : [
                 {
@@ -37,15 +37,15 @@
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.1.2/mattermost-desktop-4.1.2-linux-x64.tar.gz",
-                    "sha256": "3a4d036fcce7027455be189148758963e1baf94bd50b04047536e8050e32b699",
+                    "url": "https://releases.mattermost.com/desktop/4.2.0/mattermost-desktop-4.2.0-linux-x64.tar.gz",
+                    "sha256": "c6f9d993b02798c8f8bba6cf8c2458f2952d6f7e80890182b192e9cb1f496a42",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.1.2/mattermost-desktop-4.1.2-linux-ia32.tar.gz",
-                    "sha256": "194fa7c4a3b5881e1ff4e40cdde91d7516c63ea7f9d29c1dd542b9336858bf90",
+                    "url": "https://releases.mattermost.com/desktop/4.2.0/mattermost-desktop-4.2.0-linux-ia32.tar.gz",
+                    "sha256": "00f520be60a56148d2baf9ba454c3ba2fbcd4e25657353ec3410986cd7d3a2db",
                     "dest": "main"
                 },
                 {
@@ -58,8 +58,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.1.2.tar.gz",
-                    "sha256": "26ac290aec7daef5d75fd0e5c1027ad8bc34e7cadb03cda8408f0585bc27feb8"
+                    "url": "https://github.com/mattermost/desktop/archive/v4.2.0.tar.gz",
+                    "sha256": "cecf01bfe72842652943c6b2957461daeafac02717e5fe50590c3cd87e9c9076"
                 }
             ]
         }
