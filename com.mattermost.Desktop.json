@@ -32,20 +32,20 @@
                 {
                     "type": "script",
                     "dest-filename": "mattermost.sh",
-                    "commands": ["exec /app/main/mattermost-desktop \"$@\""]
+                    "commands": ["exec /app/main/mattermost-desktop --no-sandbox \"$@\""]
                 },
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.2.3/mattermost-desktop-4.2.3-linux-x64.tar.gz",
-                    "sha256": "8e2736070fe012b3b5a8feb197e3ea0d676d6e9a51ead69324b477701bb2be93",
+                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-x64.tar.gz",
+                    "sha256": "1ad46b20dccbcc03d102f2ff82d1ffa01919c6aedd0bd7aaab0b4d0b99fee10f",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.2.3/mattermost-desktop-4.2.3-linux-ia32.tar.gz",
-                    "sha256": "fa4177bcaad7d3c8444e07e9faf33e01e881e7bda3f57479385f567378cf7918",
+                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-ia32.tar.gz",
+                    "sha256": "24a6de5914833c20e59ff0d2ae121530bb6735f7350eedd425a687a5b6e65e0a",
                     "dest": "main"
                 },
                 {
@@ -58,8 +58,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.2.3.tar.gz",
-                    "sha256": "3c4f5faf69da01033657bfb15caff4d9388e882f2031fe852c4add8562d25476"
+                    "url": "https://github.com/mattermost/desktop/archive/v4.3.0.tar.gz",
+                    "sha256": "9964f7e722803760ab6186c8b62567d9fc9248eccec97beca006a3d2735d9a0e"
                 }
             ]
         }
