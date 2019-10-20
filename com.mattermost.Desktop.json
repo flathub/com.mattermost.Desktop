@@ -37,15 +37,15 @@
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://github.com/mattermost/desktop/releases/download/v4.3.0-rc-2/mattermost-desktop-4.3.0-develop-linux-x64.tar.gz",
-                    "sha256": "9020173a99ca468cdf6f9cd46b4486c67a7badf0f91c4870f8b90edccfe123a6",
+                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-x64.tar.gz",
+                    "sha256": "1ad46b20dccbcc03d102f2ff82d1ffa01919c6aedd0bd7aaab0b4d0b99fee10f",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://github.com/mattermost/desktop/releases/download/v4.3.0-rc-2/mattermost-desktop-4.3.0-develop-linux-ia32.tar.gz",
-                    "sha256": "357c08efc8b4e7b5a8d01de51f3307067f06b3384b28361ce18bba74cd62816d",
+                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-ia32.tar.gz",
+                    "sha256": "24a6de5914833c20e59ff0d2ae121530bb6735f7350eedd425a687a5b6e65e0a",
                     "dest": "main"
                 },
                 {
@@ -58,8 +58,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.3.0-rc-2.tar.gz",
-                    "sha256": "6b6a0bffa7839a41d86d24c517d074fe10e79704d072ce1d1496c1ee66a47b54"
+                    "url": "https://github.com/mattermost/desktop/archive/v4.3.0.tar.gz",
+                    "sha256": "9964f7e722803760ab6186c8b62567d9fc9248eccec97beca006a3d2735d9a0e"
                 }
             ]
         }
