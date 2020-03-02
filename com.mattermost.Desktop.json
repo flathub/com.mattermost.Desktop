@@ -1,6 +1,6 @@
 {
     "app-id": "com.mattermost.Desktop",
-    "base": "io.atom.electron.BaseApp",
+    "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "19.08",
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "19.08",
@@ -32,7 +32,10 @@
                 {
                     "type": "script",
                     "dest-filename": "mattermost.sh",
-                    "commands": ["exec /app/main/mattermost-desktop --no-sandbox \"$@\""]
+                    "commands": [
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "exec zypak-wrapper /app/main/mattermost-desktop \"$@\""
+                    ]
                 },
                 {
                     "type": "archive",
