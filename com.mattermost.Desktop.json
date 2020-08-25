@@ -62,7 +62,7 @@
                 {
                     "type": "file",
                     "url": "https://github.com/mattermost/desktop/archive/v4.5.3.tar.gz",
-                    "sha256": "49e4476f8f8559363a7eb573e14b84a7765d498a1eaee5720fa6890dcf8f97b0"
+                    "sha256": "84c2deade6e17ef655408824e76f7630d77452ac02f84407cd6e0d4ee618c5de"
                 }
             ]
         }
