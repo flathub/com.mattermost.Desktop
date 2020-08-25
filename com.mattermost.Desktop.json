@@ -41,14 +41,14 @@
                     "type": "archive",
                     "only-arches": ["x86_64"],
                     "url": "https://releases.mattermost.com/desktop/4.5.3/mattermost-desktop-4.5.3-linux-x64.tar.gz",
-                    "sha256": "a13c62c08290d7cd48f3b4f110742ce019de3ed036a34651e0b8efb7e03e8641",
+                    "sha256": "a0080889c05d6fee44678c46484312095d0cfbd83c6fc61ccf1248c564839d27",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
                     "url": "https://releases.mattermost.com/desktop/4.5.3/mattermost-desktop-4.5.3-linux-ia32.tar.gz",
-                    "sha256": "07fc0c2848004a4fef6e59de321f6771284061b39a5c0c99fe2e4e3b549eab81",
+                    "sha256": "6fa9c7701b46b7c0a8c744cacd1343592fcd97ab4f40b793b38bb94daa30f8dd",
                     "dest": "main"
                 },
                 {
