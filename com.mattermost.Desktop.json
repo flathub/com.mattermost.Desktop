@@ -40,15 +40,15 @@
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.5.3/mattermost-desktop-4.5.3-linux-x64.tar.gz",
-                    "sha256": "a0080889c05d6fee44678c46484312095d0cfbd83c6fc61ccf1248c564839d27",
+                    "url": "https://releases.mattermost.com/desktop/4.6.0/mattermost-desktop-4.6.0-linux-x64.tar.gz",
+                    "sha256": "40c87279b85c98967a16db9c4f11f6cd2fc6e12490d82a211e0a6b68eeb361ca",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.5.3/mattermost-desktop-4.5.3-linux-ia32.tar.gz",
-                    "sha256": "6fa9c7701b46b7c0a8c744cacd1343592fcd97ab4f40b793b38bb94daa30f8dd",
+                    "url": "https://releases.mattermost.com/desktop/4.6.0/mattermost-desktop-4.6.0-linux-ia32.tar.gz",
+                    "sha256": "2f8042217ca6d7c086dc4d8c641a73c9ca624b3191cd6ed5c43c897469c2ea63",
                     "dest": "main"
                 },
                 {
@@ -61,8 +61,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.5.3.tar.gz",
-                    "sha256": "84c2deade6e17ef655408824e76f7630d77452ac02f84407cd6e0d4ee618c5de"
+                    "url": "https://github.com/mattermost/desktop/archive/v4.6.0.tar.gz",
+                    "sha256": "ee1ff93120ed0d296c293950fd00cbd9dcc36a4f5085e1f3abf9c48ccc1e7ce0"
                 }
             ]
         }
