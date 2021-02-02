@@ -15,6 +15,7 @@
         "--device=dri",
         "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=com.canonical.AppMenu.Registrar"
     ],
     "modules": [
