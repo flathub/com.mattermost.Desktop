@@ -14,6 +14,7 @@
         "--share=network",
         "--device=dri",
         "--filesystem=home",
+        "--filesystem=xdg-run/pipewire-0",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=com.canonical.AppMenu.Registrar"
@@ -67,6 +68,24 @@
                     "sha256": "620ff64ec2c04bfe1005c25988a5d4cb20e376bc9dca9e3ce3e11dbd59ad0b47"
                 }
             ]
+     
+        },
+
+        {
+            "name": "pipewire",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgstreamer=disabled",
+                "-Dman=false",
+                "-Dsystemd=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+                    "tag": "0.2.7"
+                }
+            ]         
         }
     ]
 }
