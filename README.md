@@ -3,8 +3,8 @@
 ## Prerequisites
 
 ```
-$ flatpak install flathub org.freedesktop.Sdk//18.08
-$ flatpak install flathub io.atom.electron.BaseApp//18.08
+$ flatpak install flathub org.freedesktop.Sdk//19.08
+$ flatpak install flathub io.atom.electron.BaseApp//19.08
 ```
 
 ## Build to local repository, install
