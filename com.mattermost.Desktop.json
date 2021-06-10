@@ -28,8 +28,7 @@
                 "install mattermost.sh /app/bin/mattermost-flatpak",
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
-                "ls -alR",
-                "install -Dm644 /app/main/app_icon.png /app/share/icons/hicolor/128x128/apps/com.mattermost.Desktop.png"
+                "install -Dm644 /app/main/icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg"
             ],
             "sources" : [
                 {
