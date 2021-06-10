@@ -14,6 +14,7 @@
         "--share=network",
         "--device=dri",
         "--filesystem=home",
+        "--filesystem=xdg-run/pipewire-0",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=com.canonical.AppMenu.Registrar"
@@ -28,7 +29,8 @@
                 "install mattermost.sh /app/bin/mattermost-flatpak",
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
-                "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg"
+                "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg",
+                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-desktop --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources" : [
                 {
@@ -71,6 +73,24 @@
                     "sha256": "d7cc1f8bf30ae1a83a9c35e5f2464df747ca99ad6f0c84f72836d2b27ac613a4"
                 }
             ]
+     
+        },
+
+        {
+            "name": "pipewire",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgstreamer=disabled",
+                "-Dman=false",
+                "-Dsystemd=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+                    "tag": "0.2.7"
+                }
+            ]         
         }
     ]
 }
