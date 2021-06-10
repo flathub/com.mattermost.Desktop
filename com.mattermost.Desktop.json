@@ -63,6 +63,10 @@
                 },
                 {
                     "type": "file",
+                    "path": "icon.svg"
+                },
+                {
+                    "type": "file",
                     "url": "https://github.com/mattermost/desktop/archive/v4.7.0-rc5.tar.gz",
                     "sha256": "d7cc1f8bf30ae1a83a9c35e5f2464df747ca99ad6f0c84f72836d2b27ac613a4"
                 }
