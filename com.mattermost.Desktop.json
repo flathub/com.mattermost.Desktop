@@ -44,15 +44,15 @@
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc6/mattermost-desktop-4.7.0-rc6-linux-x64.tar.gz",
-                    "sha256": "7282428eacb926782e801c8582e5eb238dbf70061cb202fd12c143f8c8dd68e4",
+                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc7/mattermost-desktop-4.7.0-rc7-linux-x64.tar.gz",
+                    "sha256": "9a636d6f6425cc2f503b3d42053a87db41df0b82418a37b8e63ffff2fcc8bca8",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc6/mattermost-desktop-4.7.0-rc6-linux-ia32.tar.gz",
-                    "sha256": "deff74a602c62d854a4edaf2a217a6ba0489c5d3e01b793411f562ea9a774a34",
+                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc7/mattermost-desktop-4.7.0-rc7-linux-ia32.tar.gz",
+                    "sha256": "b3cd4f441fd36e5f7389999b2bf9467ee1a9d70efb60032d7a5736ebe674b223",
                     "dest": "main"
                 },
                 {
@@ -69,8 +69,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.7.0-rc6.tar.gz",
-                    "sha256": "6c5c86c690ffa3a885d4d068d0e1b15705b007d27f0ecb7076625566eb22bc28"
+                    "url": "https://github.com/mattermost/desktop/archive/v4.7.0-rc7.tar.gz",
+                    "sha256": "198d49a9e6d040a690af3b4e71fef083524b5ccab66d8176e889bf72ac42c766"
                 }
             ]
      
