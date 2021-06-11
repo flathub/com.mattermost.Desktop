@@ -1,9 +1,9 @@
 {
     "app-id": "com.mattermost.Desktop",
-    "base": "io.atom.electron.BaseApp",
-    "base-version": "18.08",
+    "base": "org.electronjs.Electron2.BaseApp",
+    "base-version": "20.08",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "18.08",
+    "runtime-version": "20.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "mattermost-flatpak",
     "separate-locales": false,
@@ -14,7 +14,10 @@
         "--share=network",
         "--device=dri",
         "--filesystem=home",
-        "--talk-name=org.freedesktop.Notifications"
+        "--filesystem=xdg-run/pipewire-0",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--talk-name=com.canonical.AppMenu.Registrar"
     ],
     "modules": [
         {
@@ -26,26 +29,30 @@
                 "install mattermost.sh /app/bin/mattermost-flatpak",
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
-                "install -Dm644 /app/main/icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg"
+                "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg",
+                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-flatpak --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources" : [
                 {
                     "type": "script",
                     "dest-filename": "mattermost.sh",
-                    "commands": ["exec /app/main/mattermost-desktop --no-sandbox \"$@\""]
+                    "commands": [
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "exec zypak-wrapper /app/main/mattermost-desktop \"$@\""
+                    ]
                 },
                 {
                     "type": "archive",
                     "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-x64.tar.gz",
-                    "sha256": "1ad46b20dccbcc03d102f2ff82d1ffa01919c6aedd0bd7aaab0b4d0b99fee10f",
+                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc6/mattermost-desktop-4.7.0-rc6-linux-x64.tar.gz",
+                    "sha256": "7282428eacb926782e801c8582e5eb238dbf70061cb202fd12c143f8c8dd68e4",
                     "dest": "main"
                 },
                 {
                     "type": "archive",
                     "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.3.0/mattermost-desktop-4.3.0-linux-ia32.tar.gz",
-                    "sha256": "24a6de5914833c20e59ff0d2ae121530bb6735f7350eedd425a687a5b6e65e0a",
+                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc6/mattermost-desktop-4.7.0-rc6-linux-ia32.tar.gz",
+                    "sha256": "deff74a602c62d854a4edaf2a217a6ba0489c5d3e01b793411f562ea9a774a34",
                     "dest": "main"
                 },
                 {
@@ -58,10 +65,32 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.3.0.tar.gz",
-                    "sha256": "9964f7e722803760ab6186c8b62567d9fc9248eccec97beca006a3d2735d9a0e"
+                    "path": "icon.svg"
+                },
+                {
+                    "type": "file",
+                    "url": "https://github.com/mattermost/desktop/archive/v4.7.0-rc6.tar.gz",
+                    "sha256": "6c5c86c690ffa3a885d4d068d0e1b15705b007d27f0ecb7076625566eb22bc28"
                 }
             ]
+     
+        },
+
+        {
+            "name": "pipewire",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgstreamer=disabled",
+                "-Dman=false",
+                "-Dsystemd=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
+                    "tag": "0.2.7"
+                }
+            ]         
         }
     ]
 }
