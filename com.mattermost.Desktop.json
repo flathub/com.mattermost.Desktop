@@ -30,7 +30,7 @@
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
                 "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg",
-                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-desktop --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-flatpak --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources" : [
                 {
