@@ -48,6 +48,7 @@
                     "url": "https://releases.mattermost.com/desktop/4.7.0/mattermost-desktop-4.7.0-linux-x64.tar.gz",
                     "sha256": "9bde569a8cdc49851a8bc879f741272f03984477166c46034cf7ed59a7ceeb9c",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "html",
                         "url": "https://docs.mattermost.com/install/desktop.html",
                         "version-pattern": "64-bit systems: mattermost-desktop-([\\d\\.-]+)-linux-x64.tar.gz",
