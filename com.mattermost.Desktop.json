@@ -47,8 +47,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/4.7.1/mattermost-desktop-4.7.1-linux-x64.tar.gz",
-                    "sha256": "3141ca063907a4bb21c5ef656645a5e40d05f12837d0f7d5b782655ff32e829b",
+                    "url": "https://releases.mattermost.com/desktop/4.7.2/mattermost-desktop-4.7.2-linux-x64.tar.gz",
+                    "sha256": "dc77a8638773684d042c51597c75fe0ada82fd80dde820a48b1ae310c015348a",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -63,8 +63,8 @@
                     "only-arches": [
                         "i386"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/4.7.1/mattermost-desktop-4.7.1-linux-ia32.tar.gz",
-                    "sha256": "3c95296564b07bc8a305a8619327cafe6afa056e828f44f91eb2d85ce4802709",
+                    "url": "https://releases.mattermost.com/desktop/4.7.2/mattermost-desktop-4.7.2-linux-ia32.tar.gz",
+                    "sha256": "62db9b1b42acedcc29cd48f1c4513603009139900347bfd120ae37e3bb898a87",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
@@ -87,8 +87,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.7.1.tar.gz",
-                    "sha256": "65a9980e83e8258f7c6864a344597ffad7c665b7758774e6935482879ee0de4e",
+                    "url": "https://github.com/mattermost/desktop/archive/v4.7.2.tar.gz",
+                    "sha256": "c6bef6f48a4e5fc2b0a066adfba1a26481bbf4ba689ef788ea4c8e14011eda82",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
