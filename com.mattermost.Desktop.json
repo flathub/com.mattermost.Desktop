@@ -1,15 +1,16 @@
 {
     "app-id": "com.mattermost.Desktop",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "20.08",
+    "base-version": "21.08",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "mattermost-flatpak",
     "separate-locales": false,
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
+        "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
         "--device=dri",
@@ -32,7 +33,7 @@
                 "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg",
                 "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-flatpak --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
-            "sources" : [
+            "sources": [
                 {
                     "type": "script",
                     "dest-filename": "mattermost.sh",
@@ -43,16 +44,33 @@
                 },
                 {
                     "type": "archive",
-                    "only-arches": ["x86_64"],
-                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc7/mattermost-desktop-4.7.0-rc7-linux-x64.tar.gz",
-                    "sha256": "9a636d6f6425cc2f503b3d42053a87db41df0b82418a37b8e63ffff2fcc8bca8",
+                    "only-arches": [
+                        "x86_64"
+                    ],
+                    "url": "https://releases.mattermost.com/desktop/5.0.2/mattermost-desktop-5.0.2-linux-x64.tar.gz",
+                    "sha256": "54e029720d4386d530e1d12fed3dd64df838612d39985f4c8a8eb00a48e7c044",
+                    "x-checker-data": {
+                        "is-main-source": true,
+                        "type": "anitya",
+                        "project-id": 215074,
+                        "stable-only": true,
+                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-x64.tar.gz"
+                    },
                     "dest": "main"
                 },
                 {
                     "type": "archive",
-                    "only-arches": ["i386"],
-                    "url": "https://releases.mattermost.com/desktop/4.7.0-rc7/mattermost-desktop-4.7.0-rc7-linux-ia32.tar.gz",
-                    "sha256": "b3cd4f441fd36e5f7389999b2bf9467ee1a9d70efb60032d7a5736ebe674b223",
+                    "only-arches": [
+                        "i386"
+                    ],
+                    "url": "https://releases.mattermost.com/desktop/5.0.2/mattermost-desktop-5.0.2-linux-ia32.tar.gz",
+                    "sha256": "ee55f1e2ea2ce0b74981b8c40326caf249a78b1846784cc4c873fc89b55821a9",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 215074,
+                        "stable-only": true,
+                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-ia32.tar.gz"
+                    },
                     "dest": "main"
                 },
                 {
@@ -69,28 +87,16 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v4.7.0-rc7.tar.gz",
-                    "sha256": "198d49a9e6d040a690af3b4e71fef083524b5ccab66d8176e889bf72ac42c766"
+                    "url": "https://github.com/mattermost/desktop/archive/v5.0.2.tar.gz",
+                    "sha256": "13636b2c325bac7d73793b6eb65d63642f7da698c47311f822de0347d7ab5f59",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 215074,
+                        "stable-only": true,
+                        "url-template": "https://github.com/mattermost/desktop/archive/v$version.tar.gz"
+                    }
                 }
             ]
-     
-        },
-
-        {
-            "name": "pipewire",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dgstreamer=disabled",
-                "-Dman=false",
-                "-Dsystemd=false"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.freedesktop.org/pipewire/pipewire.git",
-                    "tag": "0.2.7"
-                }
-            ]         
         }
     ]
 }
