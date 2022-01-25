@@ -5,27 +5,30 @@
   <launchable type="desktop-id">com.mattermost.Desktop.desktop</launchable>
   <project_license>Apache-2.0</project_license>
   <developer_name>Mattermost, Inc.</developer_name>
-  <summary>Opensource team chat</summary>
+  <summary>An open source platform for developer collaboration.</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <url type="homepage">https://www.mattermost.org/</url>
+  <url type="homepage">https://mattermost.com/</url>
   <description>
 	<p>
-       As an alternative to proprietary SaaS messaging, Mattermost brings
-       all your team communication into one place, making it searchable and
-       accessible anywhere. It’s written in Golang and React and runs as
-       a production-ready Linux binary under an MIT license with either MySQL
-       or Postgres.
+       	Mattermost is a secure collaboration platform that is open, 
+	flexible, and deeply integrated with the tools you love. 
+	An alternative to SaaS collaboration solutions, 
+	Mattermost is built explicitly for developer teams, tools, and workflows. 
+	It is written in Golang and React and runs as a production-ready Linux binary under an MIT license with either MySQL or Postgres.
     </p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://i.ibb.co/r0pgQMC/111417-mattermost-1513705902-5351114.png</image>
+      <image type="source">http://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Channels_Hero.jpg</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.ibb.co/bsLJ7D6/com-mattermost-Desktop-52afcc85d8efb3f60a3e99ee297042e2.png</image>
+      <image type="source">http://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Playbooks_Hero.jpg</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://i.ibb.co/x71fXYQ/com-mattermost-Desktop-a4b0e543c523f07a83028d9c2dc9bd6a.png</image>
+      <image type="source">http://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Boards_Hero.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">http://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Integrations_Hero.jpg</image>
     </screenshot>
   </screenshots>
   <releases>
