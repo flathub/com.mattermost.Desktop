@@ -47,8 +47,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.2/mattermost-desktop-5.0.2-linux-x64.tar.gz",
-                    "sha256": "54e029720d4386d530e1d12fed3dd64df838612d39985f4c8a8eb00a48e7c044",
+                    "url": "https://releases.mattermost.com/desktop/5.0.3/mattermost-desktop-5.0.3-linux-x64.tar.gz",
+                    "sha256": "28b49626935230699fba06e414824b0e7c5c66daed0593868cb951fa40283130",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -63,8 +63,8 @@
                     "only-arches": [
                         "i386"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.2/mattermost-desktop-5.0.2-linux-ia32.tar.gz",
-                    "sha256": "ee55f1e2ea2ce0b74981b8c40326caf249a78b1846784cc4c873fc89b55821a9",
+                    "url": "https://releases.mattermost.com/desktop/5.0.3/mattermost-desktop-5.0.3-linux-ia32.tar.gz",
+                    "sha256": "e287e33ac7c66e03b53d2a90a6280da7dd09b2f9463f59067b154047f877ffcf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
@@ -87,8 +87,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v5.0.2.tar.gz",
-                    "sha256": "13636b2c325bac7d73793b6eb65d63642f7da698c47311f822de0347d7ab5f59",
+                    "url": "https://github.com/mattermost/desktop/archive/v5.0.3.tar.gz",
+                    "sha256": "cf73a7cec26b99b044911e1a366966eb9c7cb14cc82bd83b13b1ab15d41b3902",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
