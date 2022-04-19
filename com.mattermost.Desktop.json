@@ -50,8 +50,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.4/mattermost-desktop-5.0.4-linux-x64.tar.gz",
-                    "sha256": "cbd2981ce282eecfea1167c500d900cdd31bd041b0861025743b7d58e4cb9229",
+                    "url": "https://releases.mattermost.com/desktop/5.1.0-rc.1/mattermost-desktop-5.1.0-rc.1-linux-x64.tar.gz",
+                    "sha256": "c7a645e661493d57226b7341dac6dd9c3b4111a4092edaeafd4d12bc04457411",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
