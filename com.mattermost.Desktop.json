@@ -15,7 +15,6 @@
         "--share=network",
         "--device=dri",
         "--filesystem=home",
-        "--filesystem=xdg-run/pipewire-0",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=com.canonical.AppMenu.Registrar"
