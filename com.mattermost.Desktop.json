@@ -58,21 +58,6 @@
                     "dest": "main"
                 },
                 {
-                    "type": "archive",
-                    "only-arches": [
-                        "i386"
-                    ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.4/mattermost-desktop-5.0.4-linux-ia32.tar.gz",
-                    "sha256": "cc3a810a4c740da1b11338f12ac74931fe2e494bbd68f9b4f5d40abf95b9ec84",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 215074,
-                        "stable-only": true,
-                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-ia32.tar.gz"
-                    },
-                    "dest": "main"
-                },
-                {
                     "type": "file",
                     "path": "com.mattermost.Desktop.appdata.xml"
                 },
