@@ -12,8 +12,10 @@
         "--socket=x11",
         "--socket=wayland",
         "--socket=pulseaudio",
+        "--socket=pcsc",
         "--share=network",
         "--device=dri",
+        "--device=all",
         "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
@@ -46,8 +48,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.1.1/mattermost-desktop-5.1.1-linux-x64.tar.gz",
-                    "sha256": "ef4bad78fb225d7e8c9f232acccfd3878d4d3c955663538d15e9a20910d3a433",
+                    "url": "https://releases.mattermost.com/desktop/5.2.0/mattermost-desktop-5.2.0-linux-x64.tar.gz",
+                    "sha256": "a0a7388103901dfe885ea916108539ec307dffc789581bd8328dd56f6fd4229e",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",

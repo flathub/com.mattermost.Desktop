@@ -9,12 +9,13 @@
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://mattermost.com/</url>
   <description>
-	<p>
-       	Mattermost is a secure collaboration platform that is open, 
-	flexible, and deeply integrated with the tools you love. 
-	An alternative to SaaS collaboration solutions, 
-	Mattermost is built explicitly for developer teams, tools, and workflows. 
-	It is written in Golang and React and runs as a production-ready Linux binary under an MIT license with either MySQL or Postgres.
+    <p>
+        Mattermost is a secure collaboration platform that is open,
+        flexible, and deeply integrated with the tools you love.
+        An alternative to SaaS collaboration solutions,
+        Mattermost is built explicitly for developer teams, tools, and workflows.
+        It is written in Golang and React and runs as a production-ready Linux binary
+        under an MIT license with either MySQL or Postgres.
     </p>
   </description>
   <screenshots>
@@ -32,6 +33,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.2.0" date="2022-10-31"/>
     <release version="5.1.1" date="2022-06-27"/>
     <release version="5.1.0" date="2022-05-16"/>
     <release version="5.0.4" date="2022-02-04"/>
