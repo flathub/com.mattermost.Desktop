@@ -14,7 +14,6 @@
         "--socket=pulseaudio",
         "--socket=pcsc",
         "--share=network",
-        "--device=dri",
         "--device=all",
         "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications",
