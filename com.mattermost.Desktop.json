@@ -72,8 +72,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v5.1.1.tar.gz",
-                    "sha256": "ff1c0937a1cbbb6ef64bf536cb19ef1c9254feca38a5b1e8054e255ba3d22fe7",
+                    "url": "https://github.com/mattermost/desktop/archive/v5.2.0.tar.gz",
+                    "sha256": "a360bea348d0b4366976ddb402b853f4e6d75b66e9bf36fad3e7c223bf6619ae",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
