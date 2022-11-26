@@ -47,14 +47,30 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.2.1/mattermost-desktop-5.2.1-linux-x64.tar.gz",
-                    "sha256": "d1ed8c4206f30da00fb36331bf0590864bd683221fee295109ad487155e01ca3",
+                    "url": "https://releases.mattermost.com/desktop/5.2.2-rc.1/mattermost-desktop-5.2.2-rc.1-linux-x64.tar.gz",
+                    "sha256": "3d6db434686d8f493ff293e74a3e9bac7e22c8b1f2b345354cc1bb9db7a7fba1",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 215074,
-                        "stable-only": true,
+                        "stable-only": false,
                         "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-x64.tar.gz"
+                    },
+                    "dest": "main"
+                },
+                {
+                    "type": "archive",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://releases.mattermost.com/desktop/5.2.2-rc.1/mattermost-desktop-5.2.2-rc.1-linux-arm64.tar.gz",
+                    "sha256": "c14f27f83367d4402427526b184956754a826165091cbb6875bc1c4439fd47ef",
+                    "x-checker-data": {
+                        "is-main-source": true,
+                        "type": "anitya",
+                        "project-id": 215074,
+                        "stable-only": false,
+                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-arm64.tar.gz"
                     },
                     "dest": "main"
                 },
@@ -77,7 +93,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
-                        "stable-only": true,
+                        "stable-only": false,
                         "url-template": "https://github.com/mattermost/desktop/archive/v$version.tar.gz"
                     }
                 }
