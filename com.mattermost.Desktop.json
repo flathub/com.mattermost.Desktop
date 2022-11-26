@@ -12,10 +12,10 @@
         "--socket=x11",
         "--socket=wayland",
         "--socket=pulseaudio",
+        "--socket=pcsc",
         "--share=network",
-        "--device=dri",
+        "--device=all",
         "--filesystem=home",
-        "--filesystem=xdg-run/pipewire-0",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=com.canonical.AppMenu.Registrar"
@@ -47,29 +47,14 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.3-rc1/mattermost-desktop-5.0.3-rc1-linux-x64.tar.gz",
-                    "sha256": "aabd7aa82de36aeff39e1928d56ae37695bffed4394e800d079d0b1af9c1d117",
+                    "url": "https://releases.mattermost.com/desktop/5.2.1/mattermost-desktop-5.2.1-linux-x64.tar.gz",
+                    "sha256": "d1ed8c4206f30da00fb36331bf0590864bd683221fee295109ad487155e01ca3",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 215074,
                         "stable-only": true,
                         "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-x64.tar.gz"
-                    },
-                    "dest": "main"
-                },
-                {
-                    "type": "archive",
-                    "only-arches": [
-                        "i386"
-                    ],
-                    "url": "https://releases.mattermost.com/desktop/5.0.3-rc1/mattermost-desktop-5.0.3-rc1-linux-ia32.tar.gz",
-                    "sha256": "e2e824ccfd14e37d1afbdf92b4054e34c5407d550b0095386d1d66c4559f2560",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 215074,
-                        "stable-only": true,
-                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-ia32.tar.gz"
                     },
                     "dest": "main"
                 },
@@ -87,8 +72,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v5.0.3-rc1.tar.gz",
-                    "sha256": "c47bff63750ebdbffccd8d037cb2a7e30c72860a357c2f3fc7545a8200b5a2fb",
+                    "url": "https://github.com/mattermost/desktop/archive/v5.2.1.tar.gz",
+                    "sha256": "10a6b3a8c3781cfd61e51e4095b62e690cbf00cbd9261f2e1090982bd664a1bf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
@@ -100,4 +85,3 @@
         }
     ]
 }
-
