@@ -59,6 +59,22 @@
                     "dest": "main"
                 },
                 {
+                    "type": "archive",
+                    "only-arches": [
+                        "aarch64"
+                    ],
+                    "url": "https://releases.mattermost.com/desktop/5.2.2/mattermost-desktop-5.2.2-linux-arm64.tar.gz",
+                    "sha256": "dd4b54f0d69eb1e8d5f7df1c13a972c81d3543dc357140e8a7e4221e74e401cf",
+                    "x-checker-data": {
+                        "is-main-source": true,
+                        "type": "anitya",
+                        "project-id": 215074,
+                        "stable-only": false,
+                        "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-arm64.tar.gz"
+                    },
+                    "dest": "main"
+                },
+                {
                     "type": "file",
                     "path": "com.mattermost.Desktop.appdata.xml"
                 },
