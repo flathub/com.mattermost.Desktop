@@ -17,6 +17,10 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
 
+      - name: patch RC versions
+        run: |
+          sed -i -e 's/-rc\.\([^"]*\)/~rc\1/' /home/runner/work/com.mattermost.Desktop/com.mattermost.Desktop/com.mattermost.Desktop.appdata.xml
+
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         env:
           GIT_AUTHOR_NAME: Flatpak External Data Checker
