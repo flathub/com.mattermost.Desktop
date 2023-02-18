@@ -69,7 +69,7 @@
                         "is-main-source": true,
                         "type": "anitya",
                         "project-id": 215074,
-                        "stable-only": false,
+                        "stable-only": true,
                         "url-template": "https://releases.mattermost.com/desktop/$version/mattermost-desktop-$version-linux-arm64.tar.gz"
                     },
                     "dest": "main"
