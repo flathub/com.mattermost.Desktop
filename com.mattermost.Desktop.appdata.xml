@@ -5,7 +5,7 @@
   <launchable type="desktop-id">com.mattermost.Desktop.desktop</launchable>
   <project_license>Apache-2.0</project_license>
   <developer_name>Mattermost, Inc.</developer_name>
-  <summary>An open source platform for developer collaboration.</summary>
+  <summary>An open source platform for developer collaboration</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://mattermost.com/</url>
   <description>
