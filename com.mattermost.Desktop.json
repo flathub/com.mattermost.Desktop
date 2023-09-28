@@ -13,7 +13,6 @@
         "--socket=wayland",
         "--socket=pulseaudio",
         "--socket=pcsc",
-        "--own-name=org.kde.*",
         "--share=network",
         "--device=all",
         "--filesystem=home",
