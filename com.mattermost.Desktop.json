@@ -18,7 +18,8 @@
         "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--talk-name=com.canonical.AppMenu.Registrar"
+        "--talk-name=com.canonical.AppMenu.Registrar",
+        "--env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons"
     ],
     "modules": [
         {
