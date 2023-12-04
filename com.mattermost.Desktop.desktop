@@ -7,4 +7,5 @@ Type=Application
 Icon=com.mattermost.Desktop
 StartupWMClass=Mattermost
 Categories=Network;InstantMessaging;
+MimeType=x-scheme-handler/mattermost;
 
