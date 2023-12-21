@@ -1,17 +1,27 @@
 # Mattermost Desktop - Flatpak
 
-## Prerequisites
+## Native Wayland support and Fractional scaling under Wayland
 
-```
-$ flatpak install flathub org.freedesktop.Sdk//20.08
-$ flatpak install flathub org.electronjs.Electron2.BaseApp//20.08
-```
+Wayland support has already been implemented but disabled by default due to rendering issues. A simple reload (Ctrl+R) fixes these errors.
 
-## Build to local repository, install
+You can enable it with [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) by checking the "Wayland windowing system" toggle or by running the command below:
 
-```
-$ flatpak-builder build-dir com.mattermost.Desktop.json --force-clean --repo=repo
-$ flatpak --user remote-add --no-gpg-verify test-repo repo
-$ flatpak --user install test-repo com.mattermost.Desktop
+```bash
+flatpak override -u com.mattermost.Desktop --socket=wayland
 ```
 
+## Development
+
+### Prerequisites
+
+```bash
+flatpak install flathub org.freedesktop.Sdk//22.08
+flatpak install flathub org.electronjs.Electron2.BaseApp//22.08
+```
+
+### Build to locally and run
+
+```bash
+flatpak-builder --user --install --force-clean build-dir com.mattermost.Desktop.json
+flatpak run com.mattermost.Desktop
+```
