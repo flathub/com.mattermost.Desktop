@@ -10,7 +10,6 @@
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
-        "--socket=wayland",
         "--socket=pulseaudio",
         "--socket=pcsc",
         "--share=network",
@@ -40,7 +39,10 @@
                     "dest-filename": "mattermost.sh",
                     "commands": [
                         "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
-                        "exec zypak-wrapper /app/main/mattermost-desktop \"$@\""
+                        "if [ -e $XDG_RUNTIME_DIR/${WAYLAND_DISPLAY:=wayland-0} ]; then",
+                        "wayland_opt=\"--enable-features=UseOzonePlatform --ozone-platform=wayland $wayland_opt\"",
+                        "fi",
+                        "exec zypak-wrapper /app/main/mattermost-desktop $wayland_opt \"$@\""
                     ]
                 },
                 {
