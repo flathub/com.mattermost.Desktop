@@ -1,9 +1,9 @@
 {
     "app-id": "com.mattermost.Desktop",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "22.08",
+    "base-version": "23.08",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "22.08",
+    "runtime-version": "23.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "mattermost-flatpak",
     "separate-locales": false,
@@ -32,7 +32,8 @@
                 "install -Dm644 com.mattermost.Desktop.desktop /app/share/applications/com.mattermost.Desktop.desktop",
                 "install -Dm644 com.mattermost.Desktop.appdata.xml /app/share/appdata/com.mattermost.Desktop.appdata.xml",
                 "install -Dm644 icon.svg /app/share/icons/hicolor/scalable/apps/com.mattermost.Desktop.svg",
-                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-flatpak --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+                "desktop-file-edit --set-key=\"Exec\" --set-value=\"mattermost-flatpak --enable-features=WebRTCPipeWireCapturer %U\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop",
+                "patch-desktop-filename ${FLATPAK_DEST}/main/resources/app.asar"
             ],
             "sources": [
                 {
