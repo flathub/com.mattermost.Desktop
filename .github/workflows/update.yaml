@@ -32,5 +32,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           entrypoint: /bin/sh
-          args: -c "git config --global --add safe.directory /github/workspace && cd /github/workspace && git update-index --skip-worktree flathub.json && sed -i 's/\"automerge-flathubbot-prs\": false/\"automerge-flathubbot-prs\": true/' flathub.json && /app/flatpak-external-data-checker --update --never-fork com.mattermost.Desktop.json"
+          args: -c "git config --global --add safe.directory /github/workspace && cd /github/workspace && git update-index --skip-worktree flathub.json && sed -i 's/: false/: true/' flathub.json && /app/flatpak-external-data-checker --update --never-fork com.mattermost.Desktop.json"
 
