@@ -49,8 +49,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.13.1-rc.2/mattermost-desktop-5.13.1-rc.2-linux-x64.tar.gz",
-                    "sha256": "c9990b4892b78335075c27c39ea05b44d9bf595a6c2df84ee6ede33cd07d740a",
+                    "url": "https://releases.mattermost.com/desktop/5.13.1/mattermost-desktop-5.13.1-linux-x64.tar.gz",
+                    "sha256": "ebc97b96385300ff05e55b6e76f6859a4b3509c53291302315dd6413730b02b1",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -65,8 +65,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/5.13.1-rc.2/mattermost-desktop-5.13.1-rc.2-linux-arm64.tar.gz",
-                    "sha256": "b6cb702cbaceecb5a0443a7dad36bdad8943cf5c6815b9b5413965a77b45a749",
+                    "url": "https://releases.mattermost.com/desktop/5.13.1/mattermost-desktop-5.13.1-linux-arm64.tar.gz",
+                    "sha256": "5c567d8b312c2b9a79bf88ccab5a11acc2f6b2ae25b638018d20d3750c9de5d2",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -90,8 +90,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v5.13.1-rc.2.tar.gz",
-                    "sha256": "39fb2602e95b111e3bea8e757d6a680ae82ebb8eb2b020c90718a8f3903899de",
+                    "url": "https://github.com/mattermost/desktop/archive/v5.13.1.tar.gz",
+                    "sha256": "34a107ef4d22632b071e279ae506590eb7434789cf81c69640982207c964921c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
