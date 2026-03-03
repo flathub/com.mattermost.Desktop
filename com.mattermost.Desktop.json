@@ -53,8 +53,8 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/6.0.4/mattermost-desktop-6.0.4-linux-x64.tar.gz",
-                    "sha256": "557a3de3e3f2a028c5e2c454fac527c6b8cee1ad9812d30a4e87cf973f07267d",
+                    "url": "https://releases.mattermost.com/desktop/6.1.0/mattermost-desktop-6.1.0-linux-x64.tar.gz",
+                    "sha256": "160d8e7654b621499cc45fd67dc134457eb6ab3f1e601a229c6aca10962938b6",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -69,8 +69,8 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://releases.mattermost.com/desktop/6.0.4/mattermost-desktop-6.0.4-linux-arm64.tar.gz",
-                    "sha256": "ad3aaae7748973a7523a0b5c2dff879f210b777e4d9cac33318defc1cbeb61b1",
+                    "url": "https://releases.mattermost.com/desktop/6.1.0/mattermost-desktop-6.1.0-linux-arm64.tar.gz",
+                    "sha256": "90e872b495c095daaaa0fbacd45a2a0cc2e183030cb2eaea22b0f3b6a4a19852",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
@@ -94,8 +94,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://github.com/mattermost/desktop/archive/v6.0.4.tar.gz",
-                    "sha256": "59a06019ce3fdb0483fd70c8feaf65210afd662fd429720762078c5e7da8e200",
+                    "url": "https://github.com/mattermost/desktop/archive/v6.1.0.tar.gz",
+                    "sha256": "f6db546661157320c68ddfc5a788294e57b2ebd7c8156c3ec78093c547ba053e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 215074,
