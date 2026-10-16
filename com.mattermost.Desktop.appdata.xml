@@ -20,16 +20,22 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Channels_Hero.jpg</image>
+      <image type="source">https://docs.mattermost.com/assets/images/messaging-new-hero-feeff7948b331e2deae6858693be8f17.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Playbooks_Hero.jpg</image>
+      <image type="source">https://docs.mattermost.com/assets/images/playbooks-bf2293714c62fdad595835a29c936cde.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Boards_Hero.jpg</image>
+      <image type="source">https://docs.mattermost.com/assets/images/call-window-a5bc591c004392bb8ce1f82f01e9c8b5.png</image>
     </screenshot>
     <screenshot>
-      <image type="source">https://mattermost.com/wp-content/uploads/2022/01/FlatHub_Linux_Integrations_Hero.jpg</image>
+      <image type="source">https://docs.mattermost.com/assets/images/boards-kanban-a5416027ec8da42361dc1cf95e65569f.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://docs.mattermost.com/assets/images/agents-meeting-summary-08d75cc29026f718007d0717bd874a3e.png</image>
+    </screenshot>
+    <screenshot>
+      <image type="source">https://docs.mattermost.com/assets/images/github-integration-6cec6d0133729654561a4a50b666a259.png</image>
     </screenshot>
   </screenshots>
   <releases>
