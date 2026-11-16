@@ -45,7 +45,7 @@
                     "dest-filename": "mattermost.sh",
                     "commands": [
                         "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
-                        "exec zypak-wrapper /app/main/mattermost-desktop \"$@\""
+                        "exec zypak-wrapper /app/main/com.Mattermost.Desktop \"$@\""
                     ]
                 },
                 {
